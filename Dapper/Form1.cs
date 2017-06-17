@@ -28,7 +28,8 @@ namespace Dapper
 
                     if (db.State == ConnectionState.Closed) db.Open();
                     var sonuc = db.Query<Ogrenci>("Select * From Ogrenci");
-                    ogrenciBindingSource.DataSource = sonuc;
+                    ogrenciBindingSource.DataSource = sonuc; 
+
                 }
 
                 DateTime t2 = DateTime.Now;

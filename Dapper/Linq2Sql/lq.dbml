@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbOgrenci" Class="lqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=YUNUSPC;Initial Catalog=dbOgrenci;Integrated Security=True" SettingsObjectName="Dapper.Properties.Settings" SettingsPropertyName="dbOgrenciConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Ogrenci" Member="Ogrencis">
+    <Type Name="Ogrenci">
+      <Column Name="ID_OGRENCI" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ADSOYAD" Type="System.String" DbType="VarChar(75) NOT NULL" CanBeNull="false" />
+      <Column Name="ADRES" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
